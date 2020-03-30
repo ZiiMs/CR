@@ -3,8 +3,8 @@ function AddTextEntry(key, value)
 end
 
 local config = {
-    ["TITLE"] = "Triumph Roleplay",
-    ["SUBTITLE"] = "discord.gg/4Byj43X",
+    ["TITLE"] = "Cops & Robbers",
+    ["SUBTITLE"] = "discord.gg/123SMD",
     ["MAP"] = "Map",
     ["STATUS"] = "Status",
     ["GAME"] = "Game",
@@ -33,10 +33,10 @@ Citizen.CreateThread(function()
     Citizen.Wait(0)
     local playerPed = GetPlayerPed(-1)
     local playerLocalisation = GetEntityCoords(playerPed)
-    ClearAreaOfPeds(452, -986, 30, 30, 1)
-    ClearAreaOfCops(playerLocalisation.x, playerLocalisation.y, playerLocalisation.z, 400.0)
+    --ClearAreaOfPeds(452, -986, 30, 30, 1)
+    ClearAreaOfCops(playerLocalisation.x, playerLocalisation.y, playerLocalisation.z, 400.0, 0)
     end
-    end)
+end)
 
 Citizen.CreateThread(function()
     AddTextEntry('PM_SCR_MAP', config["MAP"])

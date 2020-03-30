@@ -17,21 +17,19 @@ client_scripts {
 
     "src/menu/panels/*.lua",
     "src/menu/windows/*.lua",
-
-    
-
 }
 
 client_scripts {
-    --"@NativeUILua_Reloaded/src/NativeUIReloaded.lua",
-    "config.lua",
     "client.lua",
     "functions.lua"
 }
 
+shared_scripts {
+    "config.lua",
+}
 
 
 server_scripts {
-    "server.lua",
-    "config.lua"
+    "server.lua"
+    
 }
